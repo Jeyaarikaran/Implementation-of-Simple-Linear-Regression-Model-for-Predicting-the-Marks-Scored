@@ -66,34 +66,38 @@ RegisterNumber: 212224240064
 ```
 
 ## Output:
-
+##  HEAD VALUE
 ![Screenshot 2025-02-27 224902](https://github.com/user-attachments/assets/75fa12a2-797f-4776-8c4c-4c3cb28e2b85)
 
+##  TAIL VALUE
+![screenshot 2025-03=10 225908](https://github.com/user-attachments/assets/1fba1c23-71db-41a2-9364-12a255339d6a)
 
+
+##  HOURS VALUES
 ![Screenshot 2025-02-27 225029](https://github.com/user-attachments/assets/35952cb5-c150-44c7-acc5-ece9172bfdef)
 
-
+##  SCORES VALUES
 ![Screenshot 2025-02-27 225045](https://github.com/user-attachments/assets/a8a97036-6e92-49c9-8660-e628077d6c54)
 
-
+##  Y_PREDICTION
 ![Screenshot 2025-02-27 225056](https://github.com/user-attachments/assets/9e29ed35-37ea-4882-8214-c44c279ed14b)
 
 
 
 
-
+##  Y_TEST
 ![Screenshot 2025-02-27 225152](https://github.com/user-attachments/assets/a7b86f74-a0d9-4c92-af9c-94a406173ae2)
 
-
+##  RESULT OF MSE,MAE,RMSE
 ![Screenshot 2025-02-27 225208](https://github.com/user-attachments/assets/e07320c5-529c-4260-8b72-27bd351685f3)
 
-
+##  TRAINING SET
 ![Screenshot 2025-02-27 225227](https://github.com/user-attachments/assets/7ef5176a-9786-4cea-9753-e2afc97fc456)
 
-                                   Hours vs Scores(test set)
+##  TEST SET
 ![Screenshot 2025-02-27 225243](https://github.com/user-attachments/assets/2f2b645e-36d2-4c77-b019-10b744f06947)
 
-![simple linear regression model for predicting the marks scored](sam.png)
+
 
 
 ## Result:
