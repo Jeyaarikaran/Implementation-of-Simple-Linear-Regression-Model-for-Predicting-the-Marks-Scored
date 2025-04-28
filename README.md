@@ -23,47 +23,47 @@ Developed by:JEYAARIKARAN P
 RegisterNumber: 212224240064
 */
 
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df = pd.read_csv("student_scores.csv")
-#displaying the content in the datafile
-df.head()
-#segragatting data to variables
-X=df.iloc[:,:-1].values
-X
-Y=df.iloc[:,-1].values
-Y
-#splitting train and test data
+df=pd.read_csv("student_scores.csv")
+df.head(10)
+df.tail()
+x=df.iloc[:,:-1].values
+x
+y=df.iloc[:,1].values
+y
 from sklearn.model_selection import train_test_split
-X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size = 1/3,random_state=0)
-#displaying the Actual Value
-Y_pred
-#displaying Y test
-Y_test
-#Calculate Mean Absoulute error and Mean Squared Error
-mse=mean_squared_error(Y_test,Y_pred)
-print("MSE = ",mse)
-mae=mean_absolute_error(Y_test,Y_pred)
-print("MAE = ",mae)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
+from sklearn.linear_model import LinearRegression
+regressor=LinearRegression()
+regressor.fit(x_train,y_train)
+y_pred=regressor.predict(x_test)
+y_pred
+y_test
+mse=mean_squared_error(y_test,y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(y_test,y_pred)
+print('MAE = ',mae)
 rmse=np.sqrt(mse)
-print("RMSE = ",rmse)
-#graph plot for traning data
-plt.scatter(X_train,Y_train,color = 'orange')
-plt.plot(X_train,regressor.predict(X_train),color ='red')
+print('RMSE = ',rmse)
+##plotting for training data
+plt.scatter(x_train,y_train,color="blue")
+plt.plot(x_train,regressor.predict(x_train),color="green")
 plt.title("Hours vs Scores (Training Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-#graph plot for traning Data
-plt.scatter(X_test,Y_test,color ='purple')
-plt.plot(X_test,Y_pred,color = 'green')
-plt.title("Hours vs Scores (test set)")
+##plotting for test data
+plt.scatter(x_test,y_test,color="grey")
+plt.plot(x_test,y_pred,color="purple")
+plt.title("Hours vs Scores (Testing Set)")
 plt.xlabel("Hours")
-plt.ylabel("scores")
+plt.ylabel("Scores")
 plt.show()
+
+
 ```
 
 
