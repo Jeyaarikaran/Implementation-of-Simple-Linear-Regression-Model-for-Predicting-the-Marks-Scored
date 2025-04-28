@@ -16,7 +16,14 @@ To write a program to predict the marks scored by a student using the simple lin
 6. Compare the graphs and hence we obtained the linear regression for the given datas.
 
 ## Program:
-```.py
+```
+/*
+Program to implement the simple linear regression model for predicting the marks scored.
+Developed by:JEYAARIKARAN P
+RegisterNumber: 212224240064
+*/
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -57,13 +64,8 @@ plt.title("Hours vs Scores (test set)")
 plt.xlabel("Hours")
 plt.ylabel("scores")
 plt.show()
-
-/*
-Program to implement the simple linear regression model for predicting the marks scored.
-Developed by:JEYAARIKARAN P
-RegisterNumber: 212224240064
-*/
 ```
+
 
 ## Output:
 ##  HEAD VALUE
